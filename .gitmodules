@@ -1,0 +1,3 @@
+[submodule "target/linux/cubiea5e/files/bsp"]
+	path = target/linux/cubiea5e/files/bsp
+	url = https://github.com/Misaka-Nnnnq/allwinner-bsp.git

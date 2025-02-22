@@ -1,0 +1,1031 @@
+#
+# Allwinner BSP
+#
+
+#
+# Platform Information
+#
+CONFIG_AW_BSP=y
+# CONFIG_AW_KERNEL_AOSP is not set
+CONFIG_AW_KERNEL_ORIGIN=y
+# CONFIG_ARCH_SUN50I is not set
+CONFIG_ARCH_SUN55I=y
+# CONFIG_ARCH_SUN60I is not set
+# CONFIG_ARCH_SUN65I is not set
+CONFIG_ARCH_SUN55IW3=y
+# CONFIG_ARCH_SUN55IW5 is not set
+# CONFIG_ARCH_SUN55IW6 is not set
+# CONFIG_AW_FPGA_S4 is not set
+# CONFIG_AW_FPGA_V7 is not set
+CONFIG_AW_IC_BOARD=y
+CONFIG_AW_SOC_NAME="A527"
+# end of Platform Information
+
+#
+# Allwinner's Debugging Options
+#
+# CONFIG_AW_DEBUG_LOCK is not set
+# CONFIG_AW_DEBUG_SPINLOCK is not set
+# CONFIG_AW_DEBUG_MEM is not set
+# CONFIG_AW_DEBUG_FTRACE is not set
+# CONFIG_AW_REG_VERIFY is not set
+# CONFIG_AW_LOG_VERBOSE is not set
+# end of Allwinner's Debugging Options
+
+#
+# Device Drivers
+#
+
+#
+# Clock Drivers
+#
+# CONFIG_AW_CCU_LEGACY is not set
+CONFIG_AW_CCU=y
+CONFIG_AW_DDR_CCU=y
+# CONFIG_AW_SUN8IW11_CCU is not set
+# CONFIG_AW_SUN8IW18_CCU is not set
+# CONFIG_AW_SUN8IW20_CCU is not set
+# CONFIG_AW_SUN8IW20_R_CCU is not set
+# CONFIG_AW_SUN8IW20_TEST is not set
+# CONFIG_AW_SUN50IW12_CCU is not set
+# CONFIG_AW_SUN50IW12_R_CCU is not set
+# CONFIG_AW_SUN50IW10_CCU is not set
+# CONFIG_AW_SUN50IW10_R_CCU is not set
+# CONFIG_AW_SUN50IW10_DISPLL is not set
+# CONFIG_AW_SUN50IW9_CCU is not set
+# CONFIG_AW_SUN50IW9_R_CCU is not set
+CONFIG_AW_SUN55IW3_CCU=y
+CONFIG_AW_SUN55IW3_R_CCU=y
+CONFIG_AW_SUN55IW3_MCU_CCU=y
+# CONFIG_AW_SUN55IW3_TEST is not set
+# CONFIG_AW_SUN60IW1_CCU is not set
+# CONFIG_AW_SUN60IW1_DSP_CCU is not set
+# CONFIG_AW_SUN60IW1_R_CCU is not set
+# CONFIG_AW_SUN60IW2_CCU is not set
+# CONFIG_AW_SUN60IW2_R_CCU is not set
+# CONFIG_AW_SUN55IW5_CCU is not set
+# CONFIG_AW_SUN55IW5_R_CCU is not set
+# CONFIG_AW_SUN55IW6_CCU is not set
+# CONFIG_AW_SUN55IW6_R_CCU is not set
+# CONFIG_AW_SUN8IW21_CCU is not set
+# CONFIG_AW_SUN8IW21_R_CCU is not set
+# CONFIG_AW_SUN20IW5_AON_CCU is not set
+# CONFIG_AW_SUN20IW5_APP_CCU is not set
+# CONFIG_AW_SUN65IW1_CCU is not set
+# CONFIG_AW_SUN65IW1_R_CCU is not set
+CONFIG_AW_RTC_CCU=y
+CONFIG_AW_CCU_DEBUG=y
+CONFIG_AW_CCMU_DYNAMIC_DEBUG=y
+# end of Clock Drivers
+
+#
+# Pinctrl Drivers
+#
+CONFIG_AW_PINCTRL=y
+# CONFIG_AW_PINCTRL_DEBUGFS is not set
+# CONFIG_AW_PINCTRL_SUN8IW11 is not set
+# CONFIG_AW_PINCTRL_SUN8IW18 is not set
+# CONFIG_AW_PINCTRL_SUN8IW15P1 is not set
+# CONFIG_AW_PINCTRL_SUN8IW15P1_R is not set
+# CONFIG_AW_PINCTRL_SUN8IW20 is not set
+# CONFIG_AW_PINCTRL_SUN8IW21 is not set
+# CONFIG_AW_PINCTRL_SUN50IW9 is not set
+# CONFIG_AW_PINCTRL_SUN50IW9_R is not set
+# CONFIG_AW_PINCTRL_SUN50IW10P1 is not set
+# CONFIG_AW_PINCTRL_SUN50IW10P1_R is not set
+# CONFIG_AW_PINCTRL_SUN50IW12 is not set
+# CONFIG_AW_PINCTRL_SUN50IW12_R is not set
+CONFIG_AW_PINCTRL_SUN55IW3=y
+CONFIG_AW_PINCTRL_SUN55IW3_R=y
+# CONFIG_AW_PINCTRL_SUN55IW5 is not set
+# CONFIG_AW_PINCTRL_SUN55IW6 is not set
+# CONFIG_AW_PINCTRL_SUN60IW1 is not set
+# CONFIG_AW_PINCTRL_SUN60IW2 is not set
+# CONFIG_AW_PINCTRL_SUN20IW5 is not set
+# CONFIG_AW_PINCTRL_SUN65IW1 is not set
+# CONFIG_AW_PINCTRL_AXP22X is not set
+# CONFIG_AW_PINCTRL_LEDS is not set
+CONFIG_AW_PINCTRL_DYNAMIC_DEBUG=y
+# end of Pinctrl Drivers
+
+#
+# UART Drivers
+#
+CONFIG_AW_UART=y
+# CONFIG_AW_UART_NG is not set
+# CONFIG_AW_SERIAL_DMA is not set
+CONFIG_AW_SERIAL_CONSOLE=y
+# CONFIG_AW_SERIAL_EARLYCON is not set
+CONFIG_AW_EARLY_PRINTK=y
+# CONFIG_AW_IOSERIAL is not set
+CONFIG_AW_UART_DYNAMIC_DEBUG=y
+# CONFIG_AW_SOFT_UART is not set
+# end of UART Drivers
+
+#
+# Timer Drivers
+#
+CONFIG_AW_TIMER=y
+# CONFIG_AW_TIMER_SUN50I is not set
+CONFIG_AW_TIMER_DYNAMIC_DEBUG=y
+# end of Timer Drivers
+
+#
+# DMA Drivers
+#
+CONFIG_AW_DMA=y
+# end of DMA Drivers
+
+#
+# RTC Drivers
+#
+CONFIG_AW_RTC=y
+CONFIG_AW_RTC_REBOOT_FLAG=y
+CONFIG_AW_RTC_POWEROFF_ALARM=y
+# CONFIG_AW_TIMER_ALARM is not set
+# CONFIG_AW_FAKE_POWEROFF is not set
+# end of RTC Drivers
+
+#
+# Bus Drivers
+#
+# CONFIG_AW_NSI is not set
+# CONFIG_AW_NPD is not set
+# end of Bus Drivers
+
+#
+# Dump-Reg Drivers
+#
+CONFIG_AW_DUMP_REG=y
+# end of Dump-Reg Drivers
+
+#
+# Watchdog Drivers
+#
+CONFIG_AW_WATCHDOG=y
+# end of Watchdog Drivers
+
+#
+# IOMMU Drivers
+#
+CONFIG_AW_IOMMU=y
+CONFIG_AW_IOMMU_V1=y
+# CONFIG_AW_IOMMU_V2 is not set
+# CONFIG_AW_IOMMU_V3 is not set
+# CONFIG_AW_IOMMU_DEBUG is not set
+# end of IOMMU Drivers
+
+#
+# MBUS Drivers
+#
+# CONFIG_AW_MBUS_GENERIC is not set
+# end of MBUS Drivers
+
+#
+# SD/MMC Drivers
+#
+CONFIG_AW_MMC_HSQ=y
+CONFIG_AW_MMC=y
+CONFIG_AW_MMC_V4P1X=y
+CONFIG_AW_MMC_V4P00X=y
+# CONFIG_AW_MMC_V4P10X is not set
+CONFIG_AW_MMC_V4P5X=y
+CONFIG_AW_MMC_V5P3X=y
+# CONFIG_AW_MMC_DEBUG is not set
+CONFIG_AW_MMC_CQHCI=y
+# end of SD/MMC Drivers
+
+#
+# NAND Drivers
+#
+CONFIG_AW_NAND=y
+CONFIG_AW_RAWNAND=y
+# CONFIG_AW_RAWNAND_CD is not set
+# end of NAND Drivers
+
+CONFIG_AW_MTD=y
+
+#
+# Partition parsers
+#
+CONFIG_AW_MTD_SUNXI_PARTS=y
+# end of Partition parsers
+
+CONFIG_AW_MTD_SPI_NOR_5_15=y
+# CONFIG_AW_MTD_SPI_NOR_6_1 is not set
+CONFIG_AW_MTD_SPI_NOR_USE_4K_SECTORS=y
+# CONFIG_SPIF_SUNXI is not set
+
+#
+# AW_MTD_NAND
+#
+# CONFIG_RAW_KERNEL is not set
+# CONFIG_SIMULATE_MULTIPLANE is not set
+# CONFIG_AW_MTD_SPINAND is not set
+# CONFIG_AW_MTD_RAWNAND is not set
+# end of AW_MTD_NAND
+
+# CONFIG_SUNXI_REDEPOSIT is not set
+
+#
+# Video Drivers
+#
+CONFIG_AW_FB_CONSOLE=y
+# CONFIG_AW_DISP2 is not set
+# CONFIG_LCD_FB is not set
+# CONFIG_LCD_FB_ENABLE_DEFERRED_IO is not set
+# CONFIG_TV_DECODER_DISPLAY is not set
+# end of Video Drivers
+
+#
+# G2D Drivers
+#
+CONFIG_AW_G2D=m
+CONFIG_G2D_LEGACY=y
+# CONFIG_G2D_RCQ is not set
+CONFIG_G2D_SYNCFENCE=y
+# end of G2D Drivers
+
+#
+# DI_Drivers
+#
+CONFIG_AW_DI=m
+# CONFIG_SUNXI_DI_V1XX is not set
+# CONFIG_SUNXI_DI_V2X is not set
+CONFIG_SUNXI_DI_V3X=y
+CONFIG_SUNXI_DI_SINGEL_FILE=y
+# CONFIG_SUNXI_DI_AMP_SERVER is not set
+# end of DI_Drivers
+
+#
+# VIN (camera) Drivers
+#
+CONFIG_AW_VIDEO_SUNXI_VIN=m
+# CONFIG_AW_SENSOR_POWER is not set
+CONFIG_CSI_VIN=m
+# CONFIG_ENABLE_SENSOR_FLIP_OPTION is not set
+# CONFIG_VIDEO_SUNXI_VIN_SPECIAL is not set
+# CONFIG_CSI_CCI is not set
+# CONFIG_FLASH is not set
+CONFIG_ACTUATOR=m
+
+#
+# actuator driver select
+#
+# CONFIG_ACTUATOR_AD5820 is not set
+CONFIG_ACTUATOR_DW9714=m
+# CONFIG_ACTUATOR_FP5510 is not set
+# CONFIG_ACTUATOR_OV8825 is not set
+# CONFIG_ACTUATOR_AN41908A is not set
+# CONFIG_ACTUATOR_AD5823 is not set
+# end of actuator driver select
+
+# CONFIG_SENSOR_LIST is not set
+# CONFIG_BUF_AUTO_UPDATE is not set
+# CONFIG_PIPELINE_RESET is not set
+# CONFIG_MULTI_FRAME is not set
+# CONFIG_SUPPORT_ISP_TDM is not set
+# CONFIG_SENSOR_RGB is not set
+CONFIG_VIPP_YUV2RGB=y
+# CONFIG_MULTI_FRM_MERGE_INT is not set
+# CONFIG_DISPPLAY_SYNC is not set
+CONFIG_VIN_IOMMU=y
+CONFIG_D3D=y
+# CONFIG_D3D_LTF_EN is not set
+# CONFIG_D3D_COMPRESS_EN is not set
+CONFIG_D3D_PKG_MODE=y
+# CONFIG_D3D_LBC_MODE is not set
+# CONFIG_WDR is not set
+# CONFIG_SAME_I2C is not set
+# CONFIG_VIN_SDRAM_DFS is not set
+# CONFIG_ISP_SERVER_MELIS is not set
+# CONFIG_VIN_INIT_MELIS is not set
+
+#
+# sensor driver select
+#
+# CONFIG_SENSOR_RN6854M is not set
+# CONFIG_SENSOR_NVP6158C is not set
+# CONFIG_SENSOR_GC02M1B is not set
+# CONFIG_SENSOR_GC02M1 is not set
+# CONFIG_SENSOR_GC030A is not set
+# CONFIG_SENSOR_GC05A2 is not set
+# CONFIG_SENSOR_GC2385 is not set
+# CONFIG_SENSOR_GC5025 is not set
+CONFIG_SENSOR_GC6133=m
+CONFIG_SENSOR_BF30A2=m
+# CONFIG_SENSOR_IMX278 is not set
+# CONFIG_SENSOR_IMX278_2LANE is not set
+# CONFIG_SENSOR_IMX386 is not set
+# CONFIG_SENSOR_IMX386_2LANE is not set
+# CONFIG_SENSOR_OV5640 is not set
+# CONFIG_SENSOR_OV5648_MIPI is not set
+# CONFIG_SENSOR_OV2775 is not set
+CONFIG_SENSOR_OV5675=m
+CONFIG_SENSOR_OV02A10=m
+# CONFIG_SENSOR_GC2145 is not set
+# CONFIG_SENSOR_GC0310 is not set
+# CONFIG_SENSOR_GC2355 is not set
+# CONFIG_SENSOR_GC5024 is not set
+# CONFIG_SENSOR_GC5035 is not set
+# CONFIG_SENSOR_GC2590 is not set
+# CONFIG_SENSOR_SP5409 is not set
+# CONFIG_SENSOR_IMX214 is not set
+CONFIG_SENSOR_IMX219=m
+# CONFIG_SENSOR_IMX274_SLVDS is not set
+# CONFIG_SENSOR_IMX291_DVP is not set
+# CONFIG_SENSOR_IMX291 is not set
+# CONFIG_SENSOR_IMX317 is not set
+# CONFIG_SENSOR_IMX335 is not set
+# CONFIG_SENSOR_IMX326 is not set
+# CONFIG_SENSOR_IMX477 is not set
+# CONFIG_SENSOR_OV2710 is not set
+# CONFIG_SENSOR_OV2718 is not set
+# CONFIG_SENSOR_AR0238 is not set
+# CONFIG_SENSOR_OV7251 is not set
+# CONFIG_SENSOR_OV8856 is not set
+# CONFIG_SENSOR_OV8858_R2A_4LANE is not set
+# CONFIG_SENSOR_OV2680 is not set
+# CONFIG_SENSOR_S5K3H5XA is not set
+# CONFIG_SENSOR_AR0238_HISPI is not set
+# CONFIG_SENSOR_NVP6134 is not set
+# CONFIG_SENSOR_NVP6324 is not set
+# CONFIG_SENSOR_TP9950 is not set
+# CONFIG_SENSOR_SC2232 is not set
+# CONFIG_SENSOR_SC035HGS is not set
+# CONFIG_SENSOR_GC02M2 is not set
+# CONFIG_SENSOR_C2390A is not set
+# CONFIG_SENSOR_C2398 is not set
+# CONFIG_SENSOR_C2399 is not set
+CONFIG_SENSOR_IMX319=m
+CONFIG_SENSOR_S5K5E8=m
+# CONFIG_SENSOR_TP9930 is not set
+# CONFIG_SENSOR_TP2815 is not set
+# CONFIG_SENSOR_LT7911D is not set
+# CONFIG_SENSOR_OV13850 is not set
+# CONFIG_SENSOR_LT6911C is not set
+CONFIG_SENSOR_TC358743XBG=m
+# end of sensor driver select
+# end of VIN (camera) Drivers
+
+#
+# VFE (camera) Drivers
+#
+# CONFIG_CSI_VFE is not set
+# end of VFE (camera) Drivers
+
+#
+# TVD (cvbs in) Drivers
+#
+# end of TVD (cvbs in) Drivers
+
+#
+# DRM Drivers
+#
+CONFIG_AW_DRM=y
+CONFIG_AW_DRM_DE=y
+CONFIG_AW_DRM_TCON=y
+CONFIG_AW_DRM_TCON_TV=y
+CONFIG_AW_DRM_TCON_TOP=y
+CONFIG_AW_DRM_LVDS=y
+CONFIG_AW_DRM_RGB=y
+CONFIG_AW_DRM_DSI=y
+CONFIG_AW_DRM_HDMI_TX=y
+# CONFIG_AW_DRM_HDMI14 is not set
+CONFIG_AW_DRM_HDMI20=y
+CONFIG_AW_DRM_EDP=y
+CONFIG_AW_DRM_EDP_CONTROLLER_USED=y
+# CONFIG_AW_DRM_DP_HDCP is not set
+CONFIG_AW_DRM_INNO_EDP13=y
+# CONFIG_AW_DRM_TRILINEAR_EDP14 is not set
+
+#
+# sunxi drm panels select
+#
+CONFIG_PANEL_DSI_GENERAL=y
+CONFIG_PANEL_LVDS_GENERAL=y
+CONFIG_PANEL_RGB_GENERAL=y
+CONFIG_PANEL_EDP_GENERAL=y
+# end of sunxi drm panels select
+
+CONFIG_AW_DRM_PHY=y
+CONFIG_AW_DRM_DSI_COMBOPHY=y
+# end of DRM Drivers
+
+#
+# Open Source GPU Drivers
+#
+CONFIG_AW_DRM_PANFROST=y
+# CONFIG_AW_DRM_LIMA is not set
+# end of Open Source GPU Drivers
+
+#
+# Sunxi Fast Car Reverse Drivers
+#
+# end of Sunxi Fast Car Reverse Drivers
+
+#
+# Sunxi Fast Car Reverse Drivers For Amp
+#
+# end of Sunxi Fast Car Reverse Drivers For Amp
+
+#
+# VE Drivers
+#
+CONFIG_AW_VIDEO_ENCODER_DECODER=m
+CONFIG_AW_VIDEO_DYNAMIC_DEBUG=y
+# CONFIG_AW_VIDEO_GOOGLE_DECODER is not set
+# end of VE Drivers
+
+#
+# rt-media
+#
+# CONFIG_VIDEO_RT_MEDIA is not set
+# end of rt-media
+
+#
+# SOUND Drivers
+#
+
+#
+# CODEC drivers
+#
+CONFIG_SND_SOC_AC107=m
+# CONFIG_SND_SOC_AC108 is not set
+# CONFIG_SND_SOC_FS16XX is not set
+# end of CODEC drivers
+
+CONFIG_SND_SOC_SUNXI_PCM=y
+CONFIG_SND_SOC_SUNXI_MACH=y
+CONFIG_SND_SOC_SUNXI_COMMON=y
+CONFIG_SND_SOC_SUNXI_INTERNALCODEC=m
+CONFIG_SND_SOC_SUNXI_SUN55IW3_CODEC=m
+
+#
+# Platform drivers
+#
+CONFIG_SND_SOC_SUNXI_AAUDIO=m
+# CONFIG_SND_SOC_SUNXI_OWA is not set
+CONFIG_SND_SOC_SUNXI_DMIC=m
+CONFIG_SND_SOC_SUNXI_I2S=y
+CONFIG_SND_SOC_SUNXI_CODEC_HDMI=y
+# CONFIG_SND_SOC_SUNXI_CODEC_EDP is not set
+# CONFIG_SND_SOC_SUNXI_CODEC_AV is not set
+CONFIG_SND_SOC_SUNXI_COMPONENTS=m
+# CONFIG_SND_SOC_SUNXI_SFX is not set
+# CONFIG_SND_SOC_SUNXI_TEST_CLK is not set
+# CONFIG_SND_SOC_SUNXI_DEBUG is not set
+CONFIG_SND_SOC_SUNXI_DYNAMIC_DEBUG=y
+# end of Platform drivers
+# end of SOUND Drivers
+
+#
+# Choose one according to the actual usage
+#
+
+#
+# CE Drivers
+#
+# CONFIG_AW_CE_SOCKET is not set
+CONFIG_AW_CE_IOCTL=y
+# end of CE Drivers
+
+#
+# SMC Drivers
+#
+CONFIG_AW_SYS_INFO=y
+CONFIG_AW_SMC=y
+# end of SMC Drivers
+
+#
+# SID Drivers
+#
+CONFIG_AW_SID=y
+# CONFIG_AW_SET_EFUSE_POWER is not set
+# end of SID Drivers
+
+#
+# SECURE STORAGE Drivers
+#
+# CONFIG_AW_SECURE_STORAGE is not set
+# end of SECURE STORAGE Drivers
+
+#
+# DRM HEAP Drivers
+#
+# CONFIG_AW_DRM_HEAP is not set
+# end of DRM HEAP Drivers
+
+#
+# PCIe Drivers
+#
+CONFIG_AW_PCIE_RC=y
+# CONFIG_AW_PCIE_EP is not set
+# CONFIG_AW_PCIE_NONE is not set
+# end of PCIe Drivers
+
+#
+# PHY Drivers
+#
+CONFIG_AW_INNO_COMBOPHY=y
+# end of PHY Drivers
+
+#
+# Emac Drivers
+#
+# CONFIG_AW_EMAC is not set
+# CONFIG_AW_EMAC_MDIO is not set
+# end of Emac Drivers
+
+#
+# Gmac Drivers
+#
+CONFIG_AW_GMAC=y
+CONFIG_AW_GMAC_MDIO=y
+CONFIG_AW_GMAC_METADATA=y
+# CONFIG_AW_EPHY is not set
+# end of Gmac Drivers
+
+#
+# Stmmac Drivers
+#
+CONFIG_AW_STMMAC_ETH=y
+CONFIG_AW_DWMAC_SUNXI=y
+CONFIG_AW_STMMAC_SELFTESTS=y
+CONFIG_AW_STMMAC_UIO=y
+# end of Stmmac Drivers
+
+#
+# USB Drivers
+#
+
+#
+# USB DWC3 Drivers
+#
+CONFIG_USB_SUNXI_DWC3=y
+CONFIG_PHY_SUNXI_PLAT=y
+CONFIG_DWC3_SUNXI_PLAT=y
+# end of USB DWC3 Drivers
+
+#
+# USB Host Controller Drivers
+#
+CONFIG_USB_EHCI_HCD_SUNXI=y
+CONFIG_USB_OHCI_HCD_SUNXI=y
+CONFIG_USB_SUNXI_HCD=y
+CONFIG_USB_SUNXI_HCI=y
+CONFIG_USB_SUNXI_EHCI0=y
+CONFIG_USB_SUNXI_EHCI1=y
+CONFIG_USB_SUNXI_OHCI0=y
+CONFIG_USB_SUNXI_OHCI1=y
+# end of USB Host Controller Drivers
+
+#
+# USB Device Drivers
+#
+CONFIG_USB_SUNXI_USB=y
+CONFIG_USB_SUNXI_USB_MANAGER=y
+CONFIG_USB_SUNXI_USB_DEBUG=y
+CONFIG_USB_SUNXI_USB_ADB=y
+CONFIG_USB_SUNXI_UDC0=y
+# end of USB Device Drivers
+
+#
+# USB Type-C Support
+#
+CONFIG_USB_SUNXI_TYPEC=y
+CONFIG_TYPEC_HUSB311=y
+
+#
+# USB Type-C Multiplexer/DeMultiplexer Switch support
+#
+CONFIG_TYPEC_MUX_PS8743=y
+# CONFIG_TYPEC_MUX_FSA4480 is not set
+# CONFIG_TYPEC_MUX_GPIO_GMA340 is not set
+# CONFIG_TYPEC_MUX_SUNXI_PHY_SWITCHER is not set
+# end of USB Type-C Multiplexer/DeMultiplexer Switch support
+# end of USB Type-C Support
+
+#
+# USB Gadget Drivers
+#
+# CONFIG_USB_SUNXI_GADGET is not set
+# end of USB Gadget Drivers
+
+#
+# USB EXTCON Support
+#
+# CONFIG_USB_SUNXI_EXTCON is not set
+# end of USB EXTCON Support
+
+#
+# USB PHY Support
+#
+# CONFIG_USB_SUNXI_PHY is not set
+# end of USB PHY Support
+# end of USB Drivers
+
+#
+# TWI Drivers
+#
+CONFIG_AW_TWI=y
+# CONFIG_AW_TWI_DELAYINIT is not set
+# CONFIG_AW_TWI_DYNAMIC_DEBUG is not set
+# end of TWI Drivers
+
+#
+# SPI Drivers
+#
+# CONFIG_AW_SPI is not set
+# end of SPI Drivers
+
+#
+# SPI NG Drivers
+#
+CONFIG_AW_SPI_NG=m
+# CONFIG_AW_SPI_NG_ATOMIC_XFER is not set
+# CONFIG_AW_SPI_SLAVETEST is not set
+# CONFIG_AW_SPI_CAMERATEST is not set
+# end of SPI NG Drivers
+
+#
+# LED Drivers
+#
+CONFIG_AW_LEDC=y
+# end of LED Drivers
+
+#
+# PWM Drivers
+#
+CONFIG_AW_PWM=y
+# CONFIG_AW_SOFT_PWM is not set
+# end of PWM Drivers
+
+#
+# IR-TX Drivers
+#
+CONFIG_AW_IR_TX=y
+# end of IR-TX Drivers
+
+#
+# IR-RX Drivers
+#
+CONFIG_AW_IR_RX=y
+# CONFIG_AW_IR_GPIO_RX is not set
+# end of IR-RX Drivers
+
+#
+# General Purpose ADC Drivers
+#
+CONFIG_AW_GPADC=y
+# end of General Purpose ADC Drivers
+
+#
+# Low Rate ADC Drivers
+#
+CONFIG_AW_LRADC=y
+# end of Low Rate ADC Drivers
+
+#
+# Resistive Touch Panel Drivers
+#
+# CONFIG_AW_RTP is not set
+# end of Resistive Touch Panel Drivers
+
+#
+# Input Device Drivers
+#
+CONFIG_AW_INPUT_SENSORINIT=y
+CONFIG_AW_INPUT_CTP=y
+# CONFIG_TOUCHSCREEN_GT9XX_SECONDARY is not set
+# CONFIG_TOUCHSCREEN_GSLX680NEW is not set
+# CONFIG_TOUCHSCREEN_WACOM_PEN is not set
+CONFIG_TOUCHSCREEN_GT9XXNEW_TS=y
+# CONFIG_TOUCHSCREEN_GT9XXNEW_UPDATE is not set
+# CONFIG_TOUCHSCREEN_GT9XXNEW_TOOL is not set
+CONFIG_TOUCHSCREEN_GT9XX=m
+# CONFIG_TOUCHSCREEN_HYNITRON_TS is not set
+# CONFIG_TOUCHSCREEN_ILITEK_TDDI is not set
+# CONFIG_TOUCHSCREEN_FTS is not set
+# CONFIG_TOUCHSCREEN_TLSC6X_TS is not set
+# CONFIG_TOUCHSCREEN_GT82X is not set
+# CONFIG_TOUCHSCREEN_NT36xxx_HOSTDL_SPI is not set
+CONFIG_AW_INPUT_SENSOR=y
+# CONFIG_SENSOR_SC7A20 is not set
+CONFIG_SENSOR_STK3X1X=m
+CONFIG_SENSORS_MIR3DA=m
+# CONFIG_SENSOR_MSA is not set
+# CONFIG_SENSOR_MMC5603X is not set
+# CONFIG_SENSORS_BMI323 is not set
+# CONFIG_SENSORS_QMI8658 is not set
+CONFIG_AW_INPUT_MISC=y
+CONFIG_AW_HALL_SENSOR=m
+CONFIG_AW_VIBRATOR=m
+# end of Input Device Drivers
+
+#
+# ATA Drivers
+#
+# CONFIG_AW_AHCI is not set
+# end of ATA Drivers
+
+#
+# Smart Card Reader Drivers
+#
+# CONFIG_AW_SCR is not set
+# end of Smart Card Reader Drivers
+
+#
+# Wiegand Drivers
+#
+# CONFIG_SUNXI_WIEGAND is not set
+# end of Wiegand Drivers
+
+#
+# Network Device Drivers
+#
+
+#
+# Wireless LAN
+#
+# CONFIG_BCMDHD is not set
+# CONFIG_RTL8188FU is not set
+# CONFIG_RTL8723CS is not set
+# CONFIG_RTL8723DS is not set
+# CONFIG_RTL8723DU is not set
+# CONFIG_RTL8822BS is not set
+# CONFIG_RTL8822CU is not set
+# CONFIG_RTL8852BS is not set
+# CONFIG_XR819_WLAN is not set
+# CONFIG_XR829_WLAN is not set
+# CONFIG_SPARD_WLAN_SUPPORT is not set
+CONFIG_AIC_WLAN_SUPPORT=y
+CONFIG_AIC_INTF_SDIO=y
+# CONFIG_AIC_INTF_USB is not set
+CONFIG_AIC_IRQ_ACTIVE_UNSET=y
+# CONFIG_AIC_IRQ_ACTIVE_HIGH is not set
+# CONFIG_AIC_IRQ_ACTIVE_RISING is not set
+# CONFIG_AIC_IRQ_ACTIVE_LOW is not set
+# CONFIG_AIC_IRQ_ACTIVE_FALLING is not set
+CONFIG_AIC8800_WLAN_SUPPORT=m
+CONFIG_AIC8800_BTLPM_SUPPORT=m
+# CONFIG_ATBM_WIRELESS is not set
+# CONFIG_SSV6158 is not set
+# end of Wireless LAN
+# end of Network Device Drivers
+
+#
+# Networking Drivers
+#
+
+#
+# Bluetooth Subsystem Support
+#
+
+#
+# Bluetooth Device Drivers
+#
+# CONFIG_BCM_BT_LPM is not set
+# CONFIG_RTL_BT_LPM is not set
+# CONFIG_XR_BT_LPM is not set
+# CONFIG_BT_RTKBTUSB is not set
+# CONFIG_BT_RTKH5 is not set
+# end of Bluetooth Device Drivers
+# end of Bluetooth Subsystem Support
+# end of Networking Drivers
+
+#
+# IRQ-Chip Drivers
+#
+CONFIG_AW_WAKEUPGEN=y
+CONFIG_AW_SUN8I_NMI=y
+# end of IRQ-Chip Drivers
+
+#
+# Standby Debugging Drivers
+#
+CONFIG_AW_STANDBY_DEBUG=y
+# end of Standby Debugging Drivers
+
+#
+# Thermal Drivers
+#
+CONFIG_AW_THERMAL=y
+CONFIG_AW_CPUFREQ_CLAMP=y
+# CONFIG_AW_THERMAL_CRITICAL_HANDLER is not set
+# end of Thermal Drivers
+
+#
+# NVMEM Drivers
+#
+CONFIG_NVMEM_AW_SID=y
+# end of NVMEM Drivers
+
+#
+# Power Domain Drivers
+#
+# CONFIG_AW_GPU_PM_DOMAINS is not set
+CONFIG_AW_PM_DOMAINS=y
+CONFIG_AW_PCK600_DOMAINS=y
+CONFIG_AW_POWER_DOMAIN_TEST=y
+# end of Power Domain Drivers
+
+#
+# PMIC Drivers
+#
+# CONFIG_AW_VIRTUAL_AC_POWER is not set
+CONFIG_AW_MFD_AXP2101=y
+CONFIG_AW_MFD_AXP2101_I2C=y
+CONFIG_AW_MFD_PMU_EXT=y
+CONFIG_AW_MFD_PMU_EXT_I2C=y
+CONFIG_AW_MFD_BMU_EXT=y
+CONFIG_AW_REGULATOR_BMU_EXT=y
+CONFIG_AW_MFD_BMU_EXT_I2C=y
+
+#
+# Regulator Drivers
+#
+CONFIG_AW_REGULATOR_AXP2101=y
+CONFIG_AW_REGULATOR_PMU_EXT=y
+# CONFIG_AW_AXP1530_WORKAROUND_DVM is not set
+# CONFIG_AW_REGULATOR_PWM is not set
+
+#
+# Powerkey Drivers
+#
+CONFIG_AW_INPUT_AXP2101_PEK=y
+
+#
+# Power Supply Drivers
+#
+# CONFIG_AW_AXP803_POWER is not set
+CONFIG_AW_AXP2202_POWER=y
+# CONFIG_AW_AXP2202_GPIO_POWER is not set
+# CONFIG_AW_AXP22X_POWER is not set
+CONFIG_AW_ETA6973_POWER=y
+CONFIG_AW_AXP519_POWER=y
+CONFIG_AW_AXP2601_POWER=y
+# end of PMIC Drivers
+
+#
+# CPU Frequency Drivers
+#
+CONFIG_AW_CPUFREQ_DT=y
+CONFIG_AW_CPUFREQ_DT_PLATDEV=y
+# CONFIG_AW_CPUFREQ_TEST is not set
+
+#
+# sunxi cpufreq Drivers
+#
+CONFIG_ARM_AW_SUN50I_CPUFREQ_NVMEM=y
+# end of sunxi cpufreq Drivers
+# end of CPU Frequency Drivers
+
+#
+# Devfreq Device Drivers
+#
+CONFIG_AW_DMC_DEVFREQ=m
+
+#
+# Devfreq Device Event Drivers
+#
+# CONFIG_AW_EVENT_DFI is not set
+CONFIG_AW_EVENT_DDR=m
+# end of Devfreq Device Event Drivers
+# end of Devfreq Device Drivers
+
+#
+# sunxi dsufreq Drivers
+#
+CONFIG_AW_SUNXI_DSUFREQ=y
+# CONFIG_AW_SUNXI_DSUFREQ_TEST is not set
+# CONFIG_AW_SUNXI_DSUFREQ_ADJUST is not set
+# end of sunxi dsufreq Drivers
+
+#
+# MSGBOX Drivers
+#
+# CONFIG_AW_MSGBOX is not set
+# end of MSGBOX Drivers
+
+#
+# HWSPINLOCK Drivers
+#
+CONFIG_AW_HWSPINLOCK=y
+# end of HWSPINLOCK Drivers
+
+#
+# Remoteproc drivers
+#
+# CONFIG_AW_REMOTEPROC is not set
+# end of Remoteproc drivers
+
+#
+# Rpmsg drivers
+#
+# CONFIG_AW_RPMSG_CTRL is not set
+# CONFIG_AW_RPMSG_NOTIFY is not set
+# CONFIG_AW_RPMSG_HEARTBEAT is not set
+# end of Rpmsg drivers
+
+#
+# Rpbuf drivers
+#
+# CONFIG_AW_RPBUF_DEV is not set
+
+#
+# Service
+#
+# CONFIG_AW_RPBUF_SERVICE_RPMSG is not set
+
+#
+# Controller
+#
+# CONFIG_AW_RPBUF_CONTROLLER_SUNXI is not set
+
+#
+# Sample
+#
+# CONFIG_AW_RPBUF_SAMPLE_SUNXI is not set
+# end of Rpbuf drivers
+
+#
+# NPU Drivers
+#
+CONFIG_AW_NNA_VIP=m
+# CONFIG_AW_NNA_GALCORE is not set
+# end of NPU Drivers
+
+#
+# Misc Devices Drivers
+#
+# CONFIG_SUNXI_DIRECT_GPIO is not set
+CONFIG_AW_RFKILL=y
+CONFIG_AW_MACADDR_MGT=y
+# CONFIG_AW_BOOTEVENT is not set
+# CONFIG_SUNXI_TVUTILS_SCRIPTS is not set
+# CONFIG_SUNXI_AFBD_WORKAROUND is not set
+# CONFIG_SUNXI_LED_BCT is not set
+# end of Misc Devices Drivers
+
+#
+# Vendor Hooks Drivers
+#
+# end of Vendor Hooks Drivers
+
+#
+# Aw trace Drivers
+#
+# CONFIG_AW_TRACE is not set
+# CONFIG_AW_HEALTHD is not set
+# end of Aw trace Drivers
+
+#
+# CRASHDUMP Drivers
+#
+CONFIG_AW_CRASHDUMP=y
+# CONFIG_PANIC_DEBUG is not set
+CONFIG_AW_CRASHDUMP_KEY=y
+# end of CRASHDUMP Drivers
+
+#
+# JTAG Drivers
+#
+# CONFIG_AW_SOFT_JTAG_MASTER is not set
+# CONFIG_AW_JTAG_MASTER is not set
+# end of JTAG Drivers
+
+#
+# AW Debugging Extensions
+#
+# CONFIG_AW_SYSCALL_PRINTK is not set
+# end of AW Debugging Extensions
+
+CONFIG_FAT_DEFAULT_CODEPAGE=437
+CONFIG_FAT_DEFAULT_IOCHARSET="iso8859-1"
+# CONFIG_FAT_DEFAULT_UTF8 is not set
+
+#
+# AW andes adaption
+#
+# CONFIG_AW_ANDES_DMA_ADAPT is not set
+# end of AW andes adaption
+
+#
+# AWLINK Drivers
+#
+# CONFIG_AW_AWLINK_SUN55I is not set
+# end of AWLINK Drivers
+# end of Device Drivers
+
+#
+# NAND Drivers
+#
+# end of NAND Drivers
+
+#
+# GPU Drivers
+#
+CONFIG_AW_GPU_TYPE="NONE"
+# end of GPU Drivers
+# end of Allwinner BSP

@@ -179,7 +179,7 @@ EOF
 	print <<EOF;
 choice
 	prompt "Target System"
-	default TARGET_ath79
+	default TARGET_cubiea5e
 	reset if !DEVEL
 	
 EOF

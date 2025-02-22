@@ -33,3 +33,6 @@ git-src
 .cproject
 .ccache
 .vscode*
+
+rootfs.ext4
+boot.img
